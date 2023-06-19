@@ -20,14 +20,14 @@ export default function Home() {
 
     return (
         <div className='container'>
-                <div>
-                    <Form addTarefa={addTarefa} />
-                </div>
-                <List>
-                    {listaTarefa.map((tarefa) => (
-                        <ItemTarefa tarefa={tarefa} removeTarefa={removeTarefa} />
-                    ))}
-                </List>
+            <div>
+                <Form addTarefa={addTarefa} />
+            </div>
+            <List>
+                {listaTarefa.map((tarefa) => (
+                    <ItemTarefa tarefa={tarefa} removeTarefa={removeTarefa} />
+                ))}
+            </List>
         </div>
     )
 }
